@@ -1,6 +1,6 @@
 {
   "name": "aws-user",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple command utility to help you manage and switch between multiple AWS CLI users. use aws-user --help for usage information.",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
