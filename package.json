@@ -1,0 +1,67 @@
+{
+  "name": "aws-user",
+  "version": "1.0.0",
+  "description": "Simple command utility to help you manage and switch between multiple AWS CLI users. use aws-user --help for usage information.",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "repository": "andrei0x309/aws-user",
+  "author": "andrei0x309 <andrei@flashsoft.eu>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "docs": "node -e 0",
+    "lint": "eslint ./src  --ext .ts",
+    "lint-fix": "eslint ./src --fix  --ext .ts",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn lint",
+    "preversion": "yarn lint",
+    "release": "yarn preversion && yarn config set version-tag-prefix aws-user@v &&  yarn config set version-git-message aws-user@v%s' && yarn version --patch && yarn postversion",
+    "postversion": "git push && git push --tags",
+    "build": "tsc --project .",
+    "postinstall": "yarn build"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "aws-user",
+    "aws user management",
+    "aws local user management",
+    "aws user util"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.7.8",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "eslint": "^8.22.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.8.4",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "yarn-upgrade-all": "^0.7.1"
+  },
+  "dependencies": {
+    "conf": "^10.2.0",
+    "typescript": "^4.7.4",
+    "yargs": "^17.5.1"
+  },
+  "bin": {
+    "aws-user": "bin/cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/andrei0x309/aws-user/issues"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "homepage": "https://github.com/andrei0x309/aws-user#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "gitHead": "babb041828cab50c525e0b9aab02d58f73416ef3"
+}
