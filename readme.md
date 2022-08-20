@@ -8,7 +8,7 @@ Use aws-user help to get all available commands.
 
 Can be helpful if you have more than one user with diffrent permissions, or users in multiple organizations.
 
-The storage is done localy in the same place where aws credentials are stored, you need to have AWS CLI installed as it assumes the credentials folder exists.
+The storage is done locally in the same place where aws credentials are stored, you need to have AWS CLI installed as it assumes the credentials folder exists.
 
 **Note:**
 
