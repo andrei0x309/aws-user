@@ -6,7 +6,7 @@ import {
   addUser,
   getAwsCredentials,
   libWipeStore,
-  libLogout,
+  libLogout
 } from './utils.js'
 
 export const listUsers = (): void => {

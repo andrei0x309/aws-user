@@ -72,6 +72,6 @@ export const libWipeStore = (): void => {
 }
 
 export const libLogout = (): void => {
-    fs.unlinkSync(getAwsCredentialsFile())
-    console.log('[INFO]: logged out of current aws account')
+  fs.unlinkSync(getAwsCredentialsFile())
+  console.log('[INFO]: logged out of current aws account')
 }
