@@ -1,6 +1,6 @@
 # aws-user
 
-[![Rate this package](https://badges.openbase.com/js/rating/aws-user.svg?token=GZHACy5YrUt2gXoa+R3BfLwqPn8ZHb1OwI7ZonkyCU8=)](https://openbase.com/js/aws-user?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
+[![Featured on Openbase](https://badges.openbase.com/js/featured/aws-user.svg?token=GZHACy5YrUt2gXoa+R3BfLwqPn8ZHb1OwI7ZonkyCU8=)](https://openbase.com/js/aws-user?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
 
 ## Description
 
